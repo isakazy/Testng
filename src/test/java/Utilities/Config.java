@@ -1,4 +1,4 @@
-package utilities;
+package Utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class Config {
     static{
         try{
             properties = new Properties();
-            FileInputStream file = new FileInputStream("C:\\Users\\isaka\\Test2.0\\src\\test\\resources\\configuration.properties");
+            FileInputStream file = new FileInputStream("src/test/resources/configuration.properties");
             properties.load(file);
         }
         catch (IOException e ){
